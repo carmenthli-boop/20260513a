@@ -9,17 +9,22 @@
   <style>
     table {
       width: 600px;
-      border-color: orange solid 2px;
-      border-spacing: 1px;
+      border: orange solid 1px;
       border-collapse: collapse;
+      /* border-spacing: 0px; */
       margin: auto;
     }
 
     th,
     td {
+      width: 200px;
       border: orange solid 1px;
       padding: 10px;
-      width: 200px;
+    }
+
+    caption {
+      padding: 10px;
+      font-size: medium;
     }
   </style>
 </head>
@@ -28,6 +33,8 @@
   <h1>Time Table</h1>
   <hr>
   <table>
+    <caption>Information</caption>
+
     <tr>
       <th>Code</th>
       <th>Name</th>
@@ -54,6 +61,39 @@
       <td>OMG</td>
     </tr>
   </table>
+  <hr>
+  <table>
+    <table id="infobox">
+
+
+      <caption>Info box</caption>
+      <table id="infobox" #infobox {}>
+        <tr>
+          <th>Code</th>
+          <th>Name</th>
+          <th>Ref</th>
+        </tr>
+        <tr>
+          <td>C2613</td>
+          <td>Chan Tai Man</td>
+          <td>Halo</td>
+        </tr>
+        <tr>
+          <td rowspan="2">B2367</td>
+          <td>Li Sheung Sheung</td>
+          <td>Moe</td>
+        </tr>
+        <tr>
+          <!-- <td>D9431</td> -->
+          <td>Ma Mei Yan</td>
+          <td>Qrc</td>
+        </tr>
+        <tr>
+          <td>A4347</td>
+          <td colspan="2">Wong Man Shan</td>
+          <!-- <td>OMG</td> -->
+        </tr>
+      </table>
 </body>
 
 </html>
